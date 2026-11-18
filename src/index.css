@@ -1,0 +1,61 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-display: "Chakra Petch", sans-serif;
+    --font-sans: "Plus Jakarta Sans", sans-serif;
+    --font-mono: "JetBrains Mono", monospace;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #0b0e14;
+    color: #e2e8f0;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+.pixelated-canvas {
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.uv-checkerboard {
+  background-color: #131822;
+  background-image:
+    linear-gradient(45deg, #1b2230 25%, transparent 25%),
+    linear-gradient(-45deg, #1b2230 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #1b2230 75%),
+    linear-gradient(-45deg, transparent 75%, #1b2230 75%);
+  background-size: 12px 12px;
+  background-position: 0 0, 0 6px, 6px -6px, -6px 0;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d1118;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #263042;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #38465e;
+}

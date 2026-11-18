@@ -1,0 +1,6 @@
+{
+  "name": "VoxelRig Studio",
+  "description": "Estúdio 3D estilo Blockbench e Minecraft para modelagem cúbica, texturização pixel-art Box UV, animação procedural e geração/edição de personagens articulados com Gemini Structured Outputs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
